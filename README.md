@@ -1,4 +1,4 @@
-# Nombre del juego (provisional)
+# SomniaTwins
 
 RPG 2D por turnos desarrollado en Godot Engine, con sistema de Quick Time Events
 y una mecánica principal de "Entusiasmo" que potencia habilidades.
@@ -25,10 +25,10 @@ y una mecánica principal de "Entusiasmo" que potencia habilidades.
 (ver carpeta `/res`)
 
 ## 🚧 Estado del proyecto
-- Diseño del gameplay: ✔
-- Prototipo de combate: ⏳
-- Arte final: ❌
-- Música: ❌
+- Diseño del gameplay: 
+- Prototipo de combate: 
+- Arte final: 
+- Música: 
 
 ## 📌 Notas
-Proyecto en etapa temprana. La arquitectura prioriza escalabilidad.
+Es una refactorización del juego en el nuevo motor Godot.
