@@ -4,9 +4,10 @@
 [ext_resource type="SpriteFrames" uid="uid://ds82bxi1fn4pb" path="res://Personaje/Sprites_hermana_caminando.tres" id="1_jk1n4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jk1n4"]
-size = Vector2(24, 30)
+size = Vector2(20, 28)
 
 [node name="CharacterBody2D" type="CharacterBody2D" node_paths=PackedStringArray("animated_sprite")]
+collision_layer = 33
 script = ExtResource("1_5mgcm")
 animated_sprite = NodePath("Hermana_Sprites")
 
@@ -17,3 +18,5 @@ animation = &"run_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_jk1n4")
+
+[node name="Camera2D" type="Camera2D" parent="."]

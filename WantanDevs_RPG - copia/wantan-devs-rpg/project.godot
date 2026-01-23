@@ -15,6 +15,10 @@ run/main_scene="uid://cduf6moej84q2"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+scene_manager="*res://Escenas/Codigos/scene_manager.gd"
+
 [display]
 
 window/size/viewport_width=384
@@ -56,6 +60,7 @@ run={
 2d_physics/layer_3="Enemigo"
 2d_physics/layer_4="NPC"
 2d_physics/layer_5="Objeto"
+2d_physics/layer_6="Triggers"
 
 [rendering]
 
