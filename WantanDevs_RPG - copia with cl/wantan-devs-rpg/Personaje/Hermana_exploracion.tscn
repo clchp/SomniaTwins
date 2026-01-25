@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bt2snna5k8cgi"]
+
+[ext_resource type="Script" uid="uid://bwykrwwj57g6u" path="res://Personaje/hermana_exploracion.gd" id="1_5mgcm"]
+[ext_resource type="SpriteFrames" uid="uid://ds82bxi1fn4pb" path="res://Personaje/Sprites_hermana_caminando.tres" id="1_jk1n4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jk1n4"]
+size = Vector2(20, 28)
+
+[node name="CharacterBody2D" type="CharacterBody2D" node_paths=PackedStringArray("animated_sprite")]
+collision_layer = 33
+script = ExtResource("1_5mgcm")
+animated_sprite = NodePath("Hermana_Sprites")
+
+[node name="Hermana_Sprites" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+sprite_frames = ExtResource("1_jk1n4")
+animation = &"run_down"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_jk1n4")
+
+[node name="Camera2D" type="Camera2D" parent="."]

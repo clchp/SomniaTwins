@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CombatantData" load_steps=5 format=3 uid="uid://igyxtsqmdn35"]
+
+[ext_resource type="Script" uid="uid://2f1xgv5wekg1" path="res://Data/CombatantData.gd" id="1_bcuyo"]
+[ext_resource type="Script" uid="uid://de8na7r4mj1td" path="res://Data/AttackData.gd" id="1_nlsqf"]
+[ext_resource type="Resource" uid="uid://53bju63708b7" path="res://Data/Ataques/golpe_enemigo.tres" id="2_jljvw"]
+[ext_resource type="PackedScene" uid="uid://cp07levo5f1aq" path="res://Personaje/enemigo1_ejemplo.tscn" id="3_nlsqf"]
+
+[resource]
+script = ExtResource("1_bcuyo")
+id = "enemigo_generico"
+display_name = "Enemigo"
+max_hp = 80
+attack = 12
+defense = 4
+speed = 8
+attacks = Array[ExtResource("1_nlsqf")]([ExtResource("2_jljvw")])
+battle_scene = ExtResource("3_nlsqf")
+metadata/_custom_type_script = "uid://2f1xgv5wekg1"

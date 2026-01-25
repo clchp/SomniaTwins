@@ -1,0 +1,258 @@
+[gd_scene load_steps=53 format=3 uid="uid://cejlim0iphp6l"]
+
+[ext_resource type="Texture2D" uid="uid://cbytbpvcxe60v" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_combo2/Espadazo2.png" id="1_0atjd"]
+[ext_resource type="Script" uid="uid://dbyt15nrmfgxg" path="res://Escenas/Tests/Combatant.gd" id="1_cxln0"]
+[ext_resource type="Texture2D" uid="uid://bp0tsjvgfvl3a" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_combo2/Espadazo3.png" id="2_cxln0"]
+[ext_resource type="Texture2D" uid="uid://ntow8k3bdhg3" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_combo2/Espadazo4.png" id="3_ta2nu"]
+[ext_resource type="Texture2D" uid="uid://p64dwxufbdt2" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_combo2/Espadazo5.png" id="4_cvstr"]
+[ext_resource type="Texture2D" uid="uid://sa55aqhbwsgf" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_combo2/Espadazo6.png" id="5_a24cu"]
+[ext_resource type="Texture2D" uid="uid://cnct2eiih4vji" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_combo2/Espadazo7.png" id="6_iob5b"]
+[ext_resource type="Texture2D" uid="uid://c6dkgt57wy63v" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_combo2/Espadazo8.png" id="7_ka5nr"]
+[ext_resource type="Texture2D" uid="uid://rfwfoqjiu4bs" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_combo2/Espadazo9.png" id="8_cpmm0"]
+[ext_resource type="Texture2D" uid="uid://bg6yano65vl3c" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_combo4/Espadazo4.png" id="9_wq60u"]
+[ext_resource type="Texture2D" uid="uid://bm66o7wquac0w" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_combo4/Espadazo5.png" id="10_xvc6p"]
+[ext_resource type="Texture2D" uid="uid://8gpyi3m0ybx5" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_combo4/Espadazo6.png" id="11_pa3ts"]
+[ext_resource type="Texture2D" uid="uid://byflopah7q6do" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_combo4/Espadazo7.png" id="12_eccub"]
+[ext_resource type="Texture2D" uid="uid://bkbnhqu72jcch" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_combo4/Espadazo8.png" id="13_jagn8"]
+[ext_resource type="Texture2D" uid="uid://bso04f3tm6e4t" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_combo4/Espadazo9.png" id="14_4fpna"]
+[ext_resource type="Texture2D" uid="uid://cc8ibxm62sery" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_combo4/Espadazo10.png" id="15_6knpw"]
+[ext_resource type="Texture2D" uid="uid://dntthh0jxy1or" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_daño/Recibir golpe1.png" id="16_3a1yj"]
+[ext_resource type="Texture2D" uid="uid://ctm3n14k1imbd" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_daño/Recibir golpe2.png" id="17_yepn7"]
+[ext_resource type="Texture2D" uid="uid://ob01733ir8u2" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_daño/Recibir golpe3.png" id="18_wghpd"]
+[ext_resource type="Texture2D" uid="uid://b0rblqd6x11ch" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_daño/Recibir golpe4.png" id="19_xfyhr"]
+[ext_resource type="Texture2D" uid="uid://j5dd6xbgbisy" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_daño/Recibir golpe5.png" id="20_nu0ew"]
+[ext_resource type="Texture2D" uid="uid://bwjdug0j0ogw0" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_daño/Recibir golpe6.png" id="21_wuvti"]
+[ext_resource type="Texture2D" uid="uid://p1nts4wvncqt" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_derrota/HermanaTieza1.png" id="22_kwnu2"]
+[ext_resource type="Texture2D" uid="uid://d0i6swdv07x4o" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_derrota/HermanaTieza2.png" id="23_3qlk2"]
+[ext_resource type="Texture2D" uid="uid://bvjp2bkq4aihe" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_derrota/HermanaTieza3.png" id="24_852v1"]
+[ext_resource type="Texture2D" uid="uid://286q3d38srvs" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_derrota/HermanaTieza4.png" id="25_no68u"]
+[ext_resource type="Texture2D" uid="uid://bno6run1aeykw" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_escopetazo/HermanaEscopetazo1.png" id="26_cq43w"]
+[ext_resource type="Texture2D" uid="uid://c5pso4y1lxu1d" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_escopetazo/HermanaEscopetazo2.png" id="27_tfq38"]
+[ext_resource type="Texture2D" uid="uid://ckt7gbt84fb4m" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_escopetazo/HermanaEscopetazo3.png" id="28_kya44"]
+[ext_resource type="Texture2D" uid="uid://ylwlrtreegac" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_escopetazo/HermanaEscopetazo4.png" id="29_g4qio"]
+[ext_resource type="Texture2D" uid="uid://dgxoa1ytokhc" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_escopetazo/HermanaEscopetazo5.png" id="30_lb066"]
+[ext_resource type="Texture2D" uid="uid://b2aanpn43din8" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_idle/iddle1.png" id="31_w2w56"]
+[ext_resource type="Texture2D" uid="uid://wusf4cehbuqn" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_idle/iddle2.png" id="32_xsoof"]
+[ext_resource type="Texture2D" uid="uid://bb385rmas1ohr" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_idle/iddle3.png" id="33_01l8r"]
+[ext_resource type="Texture2D" uid="uid://ct1tghnvd61rs" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_idle/iddle4.png" id="34_tpa0q"]
+[ext_resource type="Texture2D" uid="uid://dyydr7qd5gmdj" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_slash/Slash negro1.png" id="35_nm0ff"]
+[ext_resource type="Texture2D" uid="uid://bo40xuvcwkdlf" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_slash/Slash negro2.png" id="36_rcmr0"]
+[ext_resource type="Texture2D" uid="uid://dtd2waclaprst" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_slash/Slash negro3.png" id="37_fnp7l"]
+[ext_resource type="Texture2D" uid="uid://c08wbhb65vk3d" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_slash/Slash negro4.png" id="38_hofmd"]
+[ext_resource type="Texture2D" uid="uid://bt3reo5sbwwif" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_slash/Slash negro5.png" id="39_drj23"]
+[ext_resource type="Texture2D" uid="uid://cx1ilk7h1a335" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_slash/Slash negro6.png" id="40_22kle"]
+[ext_resource type="Texture2D" uid="uid://q68pc7auqf11" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_slash/Slash negro7.png" id="41_3w25q"]
+[ext_resource type="Texture2D" uid="uid://lyvkr8bgqvx0" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_usar_objeto/USarObjeto1.png" id="42_fdpko"]
+[ext_resource type="Texture2D" uid="uid://bwki4m5ry2cyd" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_usar_objeto/USarObjeto2.png" id="43_uy72u"]
+[ext_resource type="Texture2D" uid="uid://d0126fdf8oas4" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_usar_objeto/USarObjeto3.png" id="44_uj5vg"]
+[ext_resource type="Texture2D" uid="uid://bs83tx81kc368" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_usar_objeto/USarObjeto4.png" id="45_a6srb"]
+[ext_resource type="Texture2D" uid="uid://daw7bgiv0341k" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_usar_objeto/USarObjeto5.png" id="46_qcnd1"]
+[ext_resource type="Texture2D" uid="uid://mjk8v7lgv6yl" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_victoria/Victoria1.png" id="47_x8nak"]
+[ext_resource type="Texture2D" uid="uid://dysgf7kb1q5w4" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_victoria/Victoria2.png" id="48_f0536"]
+[ext_resource type="Texture2D" uid="uid://ciikkd443nou" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_victoria/Victoria3.png" id="49_4574w"]
+[ext_resource type="Texture2D" uid="uid://bqcl5e1h1txt5" path="res://Assets/Sprites/Batalla/Personajes/Hermana/Hermana_victoria/Victoria4.png" id="50_0en3e"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lb6o4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0atjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_cxln0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ta2nu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cvstr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_a24cu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_iob5b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ka5nr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_cpmm0")
+}],
+"loop": false,
+"name": &"combo2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_wq60u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xvc6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_pa3ts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_eccub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_jagn8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_4fpna")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_6knpw")
+}],
+"loop": false,
+"name": &"combo4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_kwnu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_3qlk2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_852v1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_no68u")
+}],
+"loop": false,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.5,
+"texture": ExtResource("26_cq43w")
+}, {
+"duration": 0.5,
+"texture": ExtResource("27_tfq38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_kya44")
+}, {
+"duration": 0.8,
+"texture": ExtResource("29_g4qio")
+}, {
+"duration": 1.2,
+"texture": ExtResource("30_lb066")
+}],
+"loop": false,
+"name": &"escopetazo",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("16_3a1yj")
+}, {
+"duration": 1.5,
+"texture": ExtResource("17_yepn7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_wghpd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_xfyhr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_nu0ew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_wuvti")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.01,
+"texture": ExtResource("31_w2w56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_xsoof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_01l8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_tpa0q")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.7
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35_nm0ff")
+}, {
+"duration": 2.0,
+"texture": ExtResource("36_rcmr0")
+}, {
+"duration": 0.7,
+"texture": ExtResource("37_fnp7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_hofmd")
+}, {
+"duration": 0.4,
+"texture": ExtResource("39_drj23")
+}, {
+"duration": 0.4,
+"texture": ExtResource("40_22kle")
+}, {
+"duration": 2.0,
+"texture": ExtResource("41_3w25q")
+}],
+"loop": false,
+"name": &"umbrella_slash",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_fdpko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_uy72u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_uj5vg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_a6srb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_qcnd1")
+}],
+"loop": false,
+"name": &"use_object",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47_x8nak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_f0536")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_4574w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_0en3e")
+}],
+"loop": false,
+"name": &"win",
+"speed": 5.0
+}]
+
+[node name="HermanaBatalla" type="Node2D"]
+script = ExtResource("1_cxln0")
+
+[node name="Animacion" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_lb6o4")
+animation = &"umbrella_slash"

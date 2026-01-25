@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CombatantData" load_steps=6 format=3 uid="uid://dspu7o06bk0c2"]
+
+[ext_resource type="Script" uid="uid://2f1xgv5wekg1" path="res://Data/CombatantData.gd" id="1_0m5wu"]
+[ext_resource type="Script" uid="uid://de8na7r4mj1td" path="res://Data/AttackData.gd" id="1_p786x"]
+[ext_resource type="Resource" uid="uid://c5w40mmlw0i52" path="res://Data/Ataques/umbrella_slash.tres" id="2_618gu"]
+[ext_resource type="Resource" uid="uid://dfk7i3amsq43t" path="res://Data/Ataques/escopetazo.tres" id="3_urq80"]
+[ext_resource type="PackedScene" uid="uid://cejlim0iphp6l" path="res://Personaje/hermana_batalla.tscn" id="4_lu85g"]
+
+[resource]
+script = ExtResource("1_0m5wu")
+id = "hermana"
+display_name = "hermana"
+is_player = true
+max_hp = 85
+attack = 12
+defense = 6
+speed = 14
+attacks = Array[ExtResource("1_p786x")]([ExtResource("2_618gu"), ExtResource("3_urq80")])
+can_coop_attacks = true
+coop_partner_id = "hermano"
+battle_scene = ExtResource("4_lu85g")
+metadata/_custom_type_script = "uid://2f1xgv5wekg1"
