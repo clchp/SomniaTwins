@@ -13,11 +13,13 @@ config_version=5
 config/name="WantanDevs_RPG"
 run/main_scene="uid://cduf6moej84q2"
 config/features=PackedStringArray("4.5", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [autoload]
 
-scene_manager="*res://Escenas/Codigos/scene_manager.gd"
+Global="*res://Escenas/Global/global.gd"
+TransitionScreen="*res://Escenas/Scripts/transition_screen.tscn"
+NavigationManager="*res://Escenas/Scripts/navigation_manager.gd"
+AudioPlayer="*res://Escenas/Scripts/audio_player.gd"
 
 [display]
 

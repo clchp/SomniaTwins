@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://csc5k8upouk5h"]
+
+[ext_resource type="AudioStream" uid="uid://dyqt5e7duo0fl" path="res://Assets/Music/Exploration theme i think.ogg" id="1_mq1oh"]
+[ext_resource type="AudioStream" uid="uid://12jm8rhicn8q" path="res://Assets/Music/Tema de combate para el rpg.ogg" id="2_curcu"]
+[ext_resource type="Script" uid="uid://tis0voc6cdp8" path="res://Escenas/Scripts/audio_player.gd" id="2_ulga1"]
+
+[sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_ulga1"]
+clip_count = 2
+clip_0/name = &"Exploracion"
+clip_0/stream = ExtResource("1_mq1oh")
+clip_0/auto_advance = 1
+clip_0/next_clip = 0
+clip_1/name = &"Combate"
+clip_1/stream = ExtResource("2_curcu")
+clip_1/auto_advance = 1
+clip_1/next_clip = 1
+
+[node name="AudioPlayer" type="AudioStreamPlayer"]
+stream = SubResource("AudioStreamInteractive_ulga1")
+autoplay = true
+script = ExtResource("2_ulga1")
