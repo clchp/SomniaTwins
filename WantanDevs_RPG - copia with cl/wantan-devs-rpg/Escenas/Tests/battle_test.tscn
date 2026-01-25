@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dsx3xw6m8slf0"]
+[gd_scene load_steps=15 format=3 uid="uid://dsx3xw6m8slf0"]
 
 [ext_resource type="Script" uid="uid://cxualhvl5swtj" path="res://Escenas/Tests/battle_test.gd" id="1_oupmm"]
 [ext_resource type="Texture2D" uid="uid://38tm31xes4r2" path="res://Assets/Sprites/Batalla/Battle_Background.png" id="1_usg2e"]
@@ -13,6 +13,7 @@
 [ext_resource type="Script" uid="uid://btj0anc1eftd3" path="res://Escenas/Tests/battle_ui.gd" id="11_78vmt"]
 [ext_resource type="PackedScene" uid="uid://dm6fdoxoidwaj" path="res://UI/action_panel.tscn" id="11_mie07"]
 [ext_resource type="PackedScene" uid="uid://dtf04cy75q73s" path="res://UI/character_status_panel.tscn" id="11_yknal"]
+[ext_resource type="AudioStream" uid="uid://12jm8rhicn8q" path="res://Assets/Music/Tema de combate para el rpg.ogg" id="14_tnn17"]
 
 [node name="BattleTest" type="Node2D"]
 script = ExtResource("1_oupmm")
@@ -52,10 +53,10 @@ script = ExtResource("6_81p0j")
 script = ExtResource("11_78vmt")
 
 [node name="ActionPanel" parent="BattleUI" instance=ExtResource("11_mie07")]
-offset_left = 153.0
-offset_top = -127.0
-offset_right = -157.0
-offset_bottom = -59.0
+offset_left = 152.0
+offset_top = -130.0
+offset_right = -162.0
+offset_bottom = -99.0
 
 [node name="HermanaPanel" parent="BattleUI" instance=ExtResource("11_yknal")]
 offset = Vector2(10, 180)
@@ -69,6 +70,9 @@ transform = Transform2D(0.3, 0, 0, 0.3, 110, 180)
 
 [node name="EnemigoPanel" parent="BattleUI" instance=ExtResource("11_yknal")]
 offset = Vector2(370, 180)
-rotation = -3.1415927
+rotation = 3.1415927
 scale = Vector2(0.3, -0.3)
 transform = Transform2D(-0.3, 0, 0, 0.3, 370, 180)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_tnn17")

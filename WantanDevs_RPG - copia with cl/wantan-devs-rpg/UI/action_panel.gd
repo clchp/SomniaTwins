@@ -1,9 +1,9 @@
-extends Panel
+extends PanelContainer
 class_name ActionPanel
 
 signal attack_pressed
 
-@onready var attack_button: Button = $HBoxContainer/AttackButton
+@onready var attack_button: Button = $VBoxContainer/AttackButton
 
 
 func _ready():

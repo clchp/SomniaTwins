@@ -3,6 +3,7 @@ class_name BattleScene
 
 @onready var turn_system: TurnSystem = $TurnSystem
 @onready var executor: BattleActionExecutor = $BattleActionExecutor
+@onready var player_music = $AudioStreamPlayer
 
 @onready var hermano: Combatant = $Combatant/HermanoBatalla
 @onready var hermana: Combatant = $Combatant/HermanaBatalla
@@ -19,7 +20,8 @@ var current_combatant: Combatant
 
 func _ready():
 	print("BattleScene READY")
-
+	player_music.play()
+	
 	combatants = [hermano, hermana, enemigo]
 
 	turn_system.turn_started.connect(_on_turn_started)

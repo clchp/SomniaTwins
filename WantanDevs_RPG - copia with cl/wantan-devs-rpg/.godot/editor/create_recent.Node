@@ -1,6 +1,8 @@
+PanelContainer
+VBoxContainer
+AudioStreamPlayer
 Node
 CanvasLayer
-VBoxContainer
 HBoxContainer
 ProgressBar
 Label
@@ -10,5 +12,3 @@ Panel
 ColorRect
 Container
 MarginContainer
-PanelContainer
-Control

@@ -1,13 +1,15 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769319132
+::res://::1769365439
 icon.svg::CompressedTexture2D::1311787936706995731::1769120318::1769303684::1::::<><><>0<>0<>16fdda1e2cb3ebaafaa041a4a4edc5f7<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Assets/::1769320964
+::res://Assets/::1769365945
 Icon.png::CompressedTexture2D::4914077098850375629::1769320964::1769320964::1::::<><><>0<>0<>a79ba7d5040ec313857e46a959309a5b<>res://.godot/imported/Icon.png-569cfaebd6e6bf2142a0c8021c6090ac.ctex::
 ::res://Assets/Exploracion/::1769303687
 Hermana_Caminar.png::CompressedTexture2D::1383202770067590272::1769234996::1769303687::1::::<><><>0<>0<>81260d7f253e1b29fa71ec8c1ad3f9bf<>res://.godot/imported/Hermana_Caminar.png-19c9574ae98e4a9582aa82a6f2655a16.ctex::
 Hermana_Correr.png::CompressedTexture2D::1187476558593454111::1769234996::1769303687::1::::<><><>0<>0<>95b6d9bec2dfeb5d4544229a36a9582b<>res://.godot/imported/Hermana_Correr.png-9e888edbb1f12377de056055747e10f3.ctex::
 ::res://Assets/Exploracion/Tileset/::1769303687
 TerrenoFinal.png::CompressedTexture2D::4796536055800775381::1769234996::1769303687::1::::<><><>0<>0<>12d6942f4d544a70548aa8fcc02bf30e<>res://.godot/imported/TerrenoFinal.png-1a5d2fd225c1d2789a28b723e7b3212e.ctex::
+::res://Assets/Music/::1769365995
+Tema de combate para el rpg.ogg::AudioStreamOggVorbis::1881217776271276118::1769365995::1769365995::1::::<><><>0<>0<>41b18263be341e2e33ce8b8ea41c2041<>res://.godot/imported/Tema de combate para el rpg.ogg-c684aeeecf3b1c354843951bce2a986f.oggvorbisstr::
 ::res://Assets/Sprites/::1769235423
 ::res://Assets/Sprites/Batalla/::1769303684
 Battle_ActionButtons.png::CompressedTexture2D::4063974832289487750::1769235462::1769303684::1::::<><><>0<>0<>c517f40ab6d724d19bc040a9a44f02ee<>res://.godot/imported/Battle_ActionButtons.png-75a2b0d5b09e79777d69d3f51978036b.ctex::
@@ -150,8 +152,8 @@ embestida.tres::Resource/AttackData::5066723123771571627::1769298485::0::1::::<>
 escopetazo.tres::Resource/AttackData::7532808748153575391::1769298485::0::1::::<><><>0<>0<><>::uid://de8na7r4mj1td::::res://Data/AttackData.gd
 golpe_enemigo.tres::Resource/AttackData::2163545775064470990::1769298485::0::1::::<><><>0<>0<><>::uid://de8na7r4mj1td::::res://Data/AttackData.gd
 umbrella_slash.tres::Resource/AttackData::6925729074102375231::1769275384::0::1::::<><><>0<>0<><>::uid://de8na7r4mj1td::::res://Data/AttackData.gd
-::res://Data/Combatientes/::1769304417
-enemigo_generico.tres::Resource/CombatantData::575396323208094434::1769304417::0::1::::<><><>0<>0<><>::uid://2f1xgv5wekg1::::res://Data/CombatantData.gd<>uid://de8na7r4mj1td::::res://Data/AttackData.gd<>uid://53bju63708b7::::res://Data/Ataques/golpe_enemigo.tres<>uid://cp07levo5f1aq::::res://Personaje/enemigo1_ejemplo.tscn
+::res://Data/Combatientes/::1769323144
+enemigo_generico.tres::Resource/CombatantData::575396323208094434::1769323144::0::1::::<><><>0<>0<><>::uid://2f1xgv5wekg1::::res://Data/CombatantData.gd<>uid://de8na7r4mj1td::::res://Data/AttackData.gd<>uid://53bju63708b7::::res://Data/Ataques/golpe_enemigo.tres<>uid://cp07levo5f1aq::::res://Personaje/enemigo1_ejemplo.tscn
 hermana.tres::Resource/CombatantData::8454899163492337603::1769304284::0::1::::<><><>0<>0<><>::uid://2f1xgv5wekg1::::res://Data/CombatantData.gd<>uid://de8na7r4mj1td::::res://Data/AttackData.gd<>uid://c5w40mmlw0i52::::res://Data/Ataques/umbrella_slash.tres<>uid://dfk7i3amsq43t::::res://Data/Ataques/escopetazo.tres<>uid://cejlim0iphp6l::::res://Personaje/hermana_batalla.tscn
 hermano.tres::Resource/CombatantData::3461804254692193813::1769304261::0::1::::<><><>0<>0<><>::uid://2f1xgv5wekg1::::res://Data/CombatantData.gd<>uid://de8na7r4mj1td::::res://Data/AttackData.gd<>uid://cegmgpfxjx4y6::::res://Data/Ataques/embestida.tres<>uid://cbg5iqhp7cdmm::::res://Personaje/hermano_batalla.tscn
 ::res://Escenas/::1769234996
@@ -159,15 +161,16 @@ hermano.tres::Resource/CombatantData::3461804254692193813::1769304261::0::1::::<
 scene_manager.gd::GDScript::4150979192968694744::1769234996::0::1::::SceneManager<>Node<><>0<>0<><>::
 scene_trigger.gd::GDScript::3399207899924373176::1769234996::0::1::::SceneTrigger<>Area2D<><>0<>0<><>::
 scene_trigger.tscn::PackedScene::584938226342165238::1769234996::0::1::::<><><>0<>0<><>::uid://booups33xijoi::::res://Escenas/Codigos/scene_trigger.gd
-::res://Escenas/Tests/::1769320759
-BattleActionExecutor.gd::GDScript::8437952119717696785::1769299411::0::1::::BattleActionExecutor<>Node<><>0<>0<><>::
-battle_test.gd::GDScript::6428492370520053367::1769317112::0::1::::BattleScene<>Node2D<><>0<>0<><>::
-battle_test.tscn::PackedScene::8471884277957219151::1769320759::0::1::::<><><>0<>0<><>::uid://cxualhvl5swtj::::res://Escenas/Tests/battle_test.gd<>uid://38tm31xes4r2::::res://Assets/Sprites/Batalla/Battle_Background.png<>uid://cejlim0iphp6l::::res://Personaje/hermana_batalla.tscn<>uid://cbg5iqhp7cdmm::::res://Personaje/hermano_batalla.tscn<>uid://cp07levo5f1aq::::res://Personaje/enemigo1_ejemplo.tscn<>uid://dspu7o06bk0c2::::res://Data/Combatientes/hermana.tres<>uid://dshn3ro104gu0::::res://Escenas/Tests/BattleActionExecutor.gd<>uid://bpk6n7knef4p2::::res://Data/Combatientes/hermano.tres<>uid://c023up88hq14e::::res://Escenas/Tests/turn_system.gd<>uid://igyxtsqmdn35::::res://Data/Combatientes/enemigo_generico.tres<>uid://cb3iofclj7ths::::res://UI/BattleUI.tscn
-Combatant.gd::GDScript::7280197610890464500::1769316071::0::1::::Combatant<>Node2D<><>0<>0<><>::
+::res://Escenas/Tests/::1769328268
+BattleActionExecutor.gd::GDScript::8437952119717696785::1769326689::0::1::::BattleActionExecutor<>Node<><>0<>0<><>::
+battle_test.gd::GDScript::6428492370520053367::1769328142::0::1::::BattleScene<>Node2D<><>0<>0<><>::
+battle_test.tscn::PackedScene::8471884277957219151::1769328268::0::1::::<><><>0<>0<><>::uid://cxualhvl5swtj::::res://Escenas/Tests/battle_test.gd<>uid://38tm31xes4r2::::res://Assets/Sprites/Batalla/Battle_Background.png<>uid://cejlim0iphp6l::::res://Personaje/hermana_batalla.tscn<>uid://cbg5iqhp7cdmm::::res://Personaje/hermano_batalla.tscn<>uid://cp07levo5f1aq::::res://Personaje/enemigo1_ejemplo.tscn<>uid://dspu7o06bk0c2::::res://Data/Combatientes/hermana.tres<>uid://dshn3ro104gu0::::res://Escenas/Tests/BattleActionExecutor.gd<>uid://bpk6n7knef4p2::::res://Data/Combatientes/hermano.tres<>uid://c023up88hq14e::::res://Escenas/Tests/turn_system.gd<>uid://igyxtsqmdn35::::res://Data/Combatientes/enemigo_generico.tres<>uid://btj0anc1eftd3::::res://Escenas/Tests/battle_ui.gd<>uid://dm6fdoxoidwaj::::res://UI/action_panel.tscn<>uid://dtf04cy75q73s::::res://UI/character_status_panel.tscn
+battle_ui.gd::GDScript::3740106724501461622::1769328170::0::1::::BattleUI<>CanvasLayer<><>0<>0<><>::
+Combatant.gd::GDScript::7280197610890464500::1769327568::0::1::::Combatant<>Node2D<><>0<>0<><>::
 test1.tscn::PackedScene::5025055050058942279::1769234996::0::1::::<><><>0<>0<><>::uid://bt2snna5k8cgi::::res://Personaje/Hermana_exploracion.tscn<>uid://xhwh87ljiee5::::res://TileSets/map_1.tres<>uid://ill32jqytba1::::res://Escenas/Codigos/scene_trigger.tscn
 test2.tscn::PackedScene::7697863383795797935::1769234996::0::1::::<><><>0<>0<><>::uid://xhwh87ljiee5::::res://TileSets/map_1.tres<>uid://bhxrtx0sd7mil::::res://Escenas/Tests/test_2.gd
 test_2.gd::GDScript::2926290643944207739::1769234996::0::1::::<>Node2D<><>0<>0<><>::
-turn_system.gd::GDScript::6585037289710365718::1769306950::0::1::::TurnSystem<>Node<><>0<>0<><>::
+turn_system.gd::GDScript::6585037289710365718::1769328207::0::1::::TurnSystem<>Node<><>0<>0<><>::
 ::res://Personaje/::1769305600
 enemigo1_ejemplo.tscn::PackedScene::5879246296520368896::1769305600::0::1::::<><><>0<>0<><>::uid://ykx3mv8babfo::::res://Assets/Sprites/Batalla/Personajes/Enemigos (ejemplo)/Mushroom/Mushroom-Attack.png<>uid://dbyt15nrmfgxg::::res://Escenas/Tests/Combatant.gd<>uid://d3cdx6p7bnsfu::::res://Assets/Sprites/Batalla/Personajes/Enemigos (ejemplo)/Mushroom/Mushroom-Die.png<>uid://drva6xdwadjuq::::res://Assets/Sprites/Batalla/Personajes/Enemigos (ejemplo)/Mushroom/Mushroom-Hit.png<>uid://duvvtmgtu8uoe::::res://Assets/Sprites/Batalla/Personajes/Enemigos (ejemplo)/Mushroom/Mushroom-Idle.png
 enemigo2_ejemplo.tscn::PackedScene::54842679776823526::1769301475::0::1::::<><><>0<>0<><>::uid://dbyt15nrmfgxg::::res://Escenas/Tests/Combatant.gd<>uid://ctm8crbr2roah::::res://Assets/Sprites/Batalla/Personajes/Enemigos (ejemplo)/Mini-slime/Mini_Slime_Attack.png<>uid://inv4ahyaeryc::::res://Assets/Sprites/Batalla/Personajes/Enemigos (ejemplo)/Mini-slime/Mini_Slime_Hurt.png<>uid://bc3ilq7whqwsr::::res://Assets/Sprites/Batalla/Personajes/Enemigos (ejemplo)/Mini-slime/Mini_Slime_Death.png<>uid://kuw6vf1sv8p2::::res://Assets/Sprites/Batalla/Personajes/Enemigos (ejemplo)/Mini-slime/Mini_Slime_Idle.png
@@ -179,9 +182,9 @@ movement.gd::GDScript::859532907508165520::1769234996::0::1::::<>Node<><>0<>0<><
 Sprites_hermana_caminando.tres::SpriteFrames::8492428068630494443::1769304019::0::1::::<><><>0<>0<><>::uid://tybfasx0i28c::::res://Assets/Exploracion/Hermana_Caminar.png<>uid://q6hthvtf6gxr::::res://Assets/Exploracion/Hermana_Correr.png
 ::res://TileSets/::1769304020
 map_1.tres::TileSet::1630144105567791718::1769304020::0::1::::<><><>0<>0<><>::uid://calqio0uvqajt::::res://Assets/Exploracion/Tileset/TerrenoFinal.png
-::res://UI/::1769320846
-BattleUI.tscn::PackedScene::4901343791414164668::1769320755::0::1::::<><><>0<>0<><>::uid://wjyaiw4xcd8o::::res://UI/battle_ui.gd
-battle_ui.gd::GDScript::1564191623170590108::1769317676::0::1::::BattleUI<>Control<><>0<>0<><>::
-CharacterBattlePanel.tscn::PackedScene::6999904681328537945::1769319505::0::1::::<><><>0<>0<><>::
-HPBar.gd::GDScript::3296592356063909605::1769315998::0::1::::HPBar<>Control<><>0<>0<><>::
-character_status_panel.tscn::PackedScene::8504741825431317674::1769320846::0::1::::<><><>0<>0<><>::
+::res://UI/::1769328195
+action_panel.gd::GDScript::8241053674741476367::1769326170::0::1::::ActionPanel<>Panel<><>0<>0<><>::
+action_panel.tscn::PackedScene::8065833598961425401::1769326835::0::1::::<><><>0<>0<><>::uid://dpoa7kgn2u8et::::res://UI/action_panel.gd
+BattleUI.tscn::PackedScene::4901343791414164668::1769324920::0::1::::<><><>0<>0<><>::
+character_status_panel.tscn::PackedScene::8504741825431317674::1769326079::0::1::::<><><>0<>0<><>::uid://df0c4l08owvcd::::res://UI/PlayerPanel.gd<>uid://ccaoeqoyq2bsn::::res://Assets/Icon.png
+PlayerPanel.gd::GDScript::7561989553025663115::1769328195::0::1::::<>Panel<><>0<>0<><>::
