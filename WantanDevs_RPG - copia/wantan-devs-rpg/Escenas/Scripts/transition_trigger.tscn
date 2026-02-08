@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctwj4phsq2drd"]
+
+[ext_resource type="Script" uid="uid://colp7qwdx8xgf" path="res://Escenas/Scripts/transition_trigger.gd" id="1_yuk61"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ookp"]
+size = Vector2(133.8125, 124)
+
+[node name="TransitionTrigger" type="Area2D"]
+collision_layer = 0
+collision_mask = 32
+script = ExtResource("1_yuk61")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2ookp")
+
+[node name="Spawn" type="Marker2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
