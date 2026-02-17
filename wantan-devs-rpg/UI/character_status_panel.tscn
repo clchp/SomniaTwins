@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dtf04cy75q73s"]
+
+[ext_resource type="PackedScene" uid="uid://bsvhpifuf4kj0" path="res://UI/PlayerPanel.tscn" id="1_te6eb"]
+
+[node name="PlayerPanel" type="CanvasLayer" unique_id=988568022]
+
+[node name="Panel" parent="." unique_id=1567246280 instance=ExtResource("1_te6eb")]

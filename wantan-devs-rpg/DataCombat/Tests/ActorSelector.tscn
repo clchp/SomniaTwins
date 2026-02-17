@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dbc60fc7rq1hq"]
+
+[ext_resource type="Script" uid="uid://co1g2lkug8xoh" path="res://Escenas/Tests/actor_selector.gd" id="1_pie3y"]
+
+[node name="ActorSelector" type="Node2D"]
+script = ExtResource("1_pie3y")

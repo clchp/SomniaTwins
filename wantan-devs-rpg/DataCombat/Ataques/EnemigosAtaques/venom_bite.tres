@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="AttackData" format=3 uid="uid://in4jsmvn06kf"]
+
+[ext_resource type="Script" uid="uid://de8na7r4mj1td" path="res://Escenas/Scripts/AttackData.gd" id="1_qjco4"]
+
+[resource]
+script = ExtResource("1_qjco4")
+id = "venom_bite"
+display_name = "Mordida Venenosa"
+description = "Una mordida que puede envenenar al objetivo."
+is_special = true
+base_power = 12
+status_effects = Array[String](["poison"])
+metadata/_custom_type_script = "uid://de8na7r4mj1td"

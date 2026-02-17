@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b6erf6f0nosnd"]
+
+[ext_resource type="Script" uid="uid://cfmivxuwd3v5f" path="res://Escenas/Global/npc.gd" id="1_2ygg6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_efihj"]
+size = Vector2(40, 60)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2ygg6"]
+load_path = "res://.godot/imported/icon.svg-17eb5d3e2a3cfbe59852220758c5b7bd.editor.ctex"
+
+[node name="NPC" type="Area2D" unique_id=2042129233]
+script = ExtResource("1_2ygg6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1932960445]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1070988494]
+shape = SubResource("RectangleShape2D_efihj")
+
+[node name="SignoDialogo" type="Sprite2D" parent="." unique_id=334611799]
+visible = false
+position = Vector2(0, -45)
+texture = SubResource("CompressedTexture2D_2ygg6")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

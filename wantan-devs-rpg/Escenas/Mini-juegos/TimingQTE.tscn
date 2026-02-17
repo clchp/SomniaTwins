@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://8opcntvxpf10"]
+
+[ext_resource type="Script" uid="uid://bpcytmmgchdm5" path="res://Escenas/Mini-juegos/timing_qte.gd" id="1_h5wif"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h5wif"]
+bg_color = Color(0.38431373, 0.38431373, 0.38431373, 0.6666667)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8eavw"]
+bg_color = Color(0.8, 0.8, 0.8, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="TimingQte" type="Control" unique_id=1041639769]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h5wif")
+
+[node name="Bar" type="ProgressBar" parent="." unique_id=1321570688]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 42.0
+offset_top = 94.5
+offset_right = 342.0
+offset_bottom = 121.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_h5wif")
+
+[node name="PerfectZone" type="ColorRect" parent="." unique_id=2106394787]
+layout_mode = 0
+offset_left = 164.0
+offset_top = 95.0
+offset_right = 225.0
+offset_bottom = 122.0
+color = Color(0.3372549, 0.8, 0.08627451, 1)
+
+[node name="Timer" type="Timer" parent="." unique_id=1767108289]
+wait_time = 2.0
+
+[node name="Indicator" type="Panel" parent="." unique_id=1085091258]
+custom_minimum_size = Vector2(6, 27)
+layout_mode = 0
+offset_left = 176.0
+offset_top = 95.0
+offset_right = 182.0
+offset_bottom = 122.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8eavw")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

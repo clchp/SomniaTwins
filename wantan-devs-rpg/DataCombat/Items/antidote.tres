@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dy7m6pdeyvosb"]
+
+[ext_resource type="Script" uid="uid://bip1510nlukxy" path="res://Escenas/Scripts/ItemData.gd" id="1_6v4uk"]
+
+[resource]
+script = ExtResource("1_6v4uk")
+id = "antidote"
+display_name = "Antídoto"
+description = "Cura el estado Veneno."
+target_flags = 3
+metadata/_custom_type_script = "uid://bip1510nlukxy"

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dm6fdoxoidwaj"]
+
+[ext_resource type="Script" uid="uid://dpoa7kgn2u8et" path="res://UI/action_panel.gd" id="1_pn4s4"]
+
+[node name="ActionPanel" type="PanelContainer" unique_id=1985647342]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -216.0
+offset_right = -314.0
+offset_bottom = -185.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_pn4s4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=820946965]
+layout_mode = 2
+alignment = 1
+
+[node name="AttackButton" type="Button" parent="VBoxContainer" unique_id=1410982912]
+custom_minimum_size = Vector2(40, 30)
+layout_mode = 2
+theme_override_constants/h_separation = 4
+text = "ATACAR"

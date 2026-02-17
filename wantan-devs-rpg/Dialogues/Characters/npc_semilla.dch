@@ -1,0 +1,50 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(0, 1, 0.0390625, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "WantanLayer",
+"suffix": ""
+},
+&"default_portrait": "Interrogative",
+&"description": "",
+&"display_name": "Aldeano Semilla",
+&"mirror": false,
+&"nicknames": ["Seedy"],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"Alert": {
+"export_overrides": {
+"image": "\"res://Assets/Icons/npc1_alert_portrait.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Interrogative": {
+"export_overrides": {
+"image": "\"res://Assets/Icons/npc1_interrogative_portrait.png\""
+},
+"ignore_char_scale": false,
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
+"Love": {
+"export_overrides": {
+"image": "\"res://Assets/Icons/npc1_love_portrait.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

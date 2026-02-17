@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AttackData" format=3 uid="uid://dfk7i3amsq43t"]
+
+[ext_resource type="Script" uid="uid://de8na7r4mj1td" path="res://Escenas/Scripts/AttackData.gd" id="1_0mi1v"]
+
+[resource]
+script = ExtResource("1_0mi1v")
+id = "escopetazo"
+display_name = "Escopetazo"
+description = "Un disparo devastador a corta distancia sobre un solo objetivo."
+ap_cost = 18
+is_special = true
+base_power = 42
+can_be_used_coop = true
+coop_ap_multiplier = 1.5
+coop_damage_multiplier = 1.7
+metadata/_custom_type_script = "uid://de8na7r4mj1td"

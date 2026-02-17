@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://dsx3xw6m8slf0"]
+
+[ext_resource type="Script" uid="uid://cxualhvl5swtj" path="res://DataCombat/Tests/battle_test.gd" id="1_oupmm"]
+[ext_resource type="Texture2D" uid="uid://38tm31xes4r2" path="res://Assets/Batalla/Battle_Background.png" id="1_usg2e"]
+[ext_resource type="PackedScene" uid="uid://cejlim0iphp6l" path="res://DataCombat/Personaje/hermana_batalla.tscn" id="2_ny4pe"]
+[ext_resource type="PackedScene" uid="uid://cbg5iqhp7cdmm" path="res://DataCombat/Personaje/hermano_batalla.tscn" id="3_oupmm"]
+[ext_resource type="PackedScene" uid="uid://cp07levo5f1aq" path="res://DataCombat/Personaje/enemigo1_ejemplo.tscn" id="4_81p0j"]
+[ext_resource type="Resource" uid="uid://dspu7o06bk0c2" path="res://DataCombat/Combatientes/hermana.tres" id="4_qpala"]
+[ext_resource type="Script" uid="uid://dshn3ro104gu0" path="res://DataCombat/Tests/BattleActionExecutor.gd" id="6_81p0j"]
+[ext_resource type="Resource" uid="uid://bpk6n7knef4p2" path="res://DataCombat/Combatientes/hermano.tres" id="6_ywwmr"]
+[ext_resource type="Script" uid="uid://c023up88hq14e" path="res://DataCombat/Tests/turn_system.gd" id="8_qpala"]
+[ext_resource type="Resource" uid="uid://igyxtsqmdn35" path="res://DataCombat/Combatientes/enemigo_generico.tres" id="8_twk82"]
+[ext_resource type="Script" uid="uid://btj0anc1eftd3" path="res://DataCombat/Tests/battle_ui.gd" id="11_78vmt"]
+[ext_resource type="PackedScene" uid="uid://dbc60fc7rq1hq" path="res://DataCombat/Tests/ActorSelector.tscn" id="11_y4rb7"]
+[ext_resource type="PackedScene" uid="uid://c710ukf1wpp7q" path="res://UI/TurnIndicator.tscn" id="12_mogx2"]
+[ext_resource type="Script" uid="uid://da6e77gom4h85" path="res://DataCombat/Tests/fade_rect.gd" id="13_mt5ic"]
+[ext_resource type="PackedScene" uid="uid://dwthl6nppig7" path="res://UI/MainActionPanel.tscn" id="14_3b05c"]
+[ext_resource type="AudioStream" uid="uid://12jm8rhicn8q" path="res://Assets/Music/Tema de combate para el rpg.ogg" id="14_tnn17"]
+
+[node name="BattleTest" type="Node2D" unique_id=636633536]
+script = ExtResource("1_oupmm")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=935218052]
+position = Vector2(192, 108.00001)
+scale = Vector2(0.8000001, 0.8000001)
+texture = ExtResource("1_usg2e")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=121820243]
+position = Vector2(192, 108)
+limit_enabled = false
+
+[node name="Combatant" type="Node2D" parent="." unique_id=575292208]
+unique_name_in_owner = true
+
+[node name="HermanaBatalla" parent="Combatant" unique_id=328259524 instance=ExtResource("2_ny4pe")]
+position = Vector2(124, 96)
+scale = Vector2(0.1, 0.1)
+combatant_data = ExtResource("4_qpala")
+
+[node name="HermanoBatalla" parent="Combatant" unique_id=1156388082 instance=ExtResource("3_oupmm")]
+position = Vector2(69.99999, 137.00002)
+scale = Vector2(0.1, 0.1)
+combatant_data = ExtResource("6_ywwmr")
+
+[node name="MushroomBatalla" parent="Combatant" unique_id=484020858 instance=ExtResource("4_81p0j")]
+position = Vector2(261, 90)
+combatant_data = ExtResource("8_twk82")
+
+[node name="MushroomBatalla2" parent="Combatant" unique_id=651588492 instance=ExtResource("4_81p0j")]
+position = Vector2(305, 131)
+combatant_data = ExtResource("8_twk82")
+
+[node name="TurnSystem" type="Node" parent="." unique_id=986534754]
+script = ExtResource("8_qpala")
+
+[node name="BattleActionExecutor" type="Node2D" parent="." unique_id=908437164]
+script = ExtResource("6_81p0j")
+
+[node name="ActorSelector" parent="." unique_id=1933738763 node_paths=PackedStringArray("turn_indicator") instance=ExtResource("11_y4rb7")]
+turn_indicator = NodePath("../BattleUI/TurnIndicator")
+
+[node name="BattleUI" type="CanvasLayer" parent="." unique_id=586114038]
+script = ExtResource("11_78vmt")
+
+[node name="FadeRect" type="ColorRect" parent="BattleUI" unique_id=314513086]
+modulate = Color(1.050853, 1.050853, 0, 0)
+z_index = 4096
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+script = ExtResource("13_mt5ic")
+
+[node name="MainActionPanel" parent="BattleUI" unique_id=843737957 instance=ExtResource("14_3b05c")]
+
+[node name="TurnIndicator" parent="BattleUI" unique_id=2062104501 instance=ExtResource("12_mogx2")]
+
+[node name="PlayerContainer" type="HBoxContainer" parent="BattleUI" unique_id=1603750833]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 7.0
+offset_top = -40.0
+offset_right = -140.0
+offset_bottom = -8.0
+scale = Vector2(0.3, 0.3)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 310
+
+[node name="qte_container" type="Control" parent="BattleUI" unique_id=471323649 groups=["qte_container"]]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1877827436]
+stream = ExtResource("14_tnn17")

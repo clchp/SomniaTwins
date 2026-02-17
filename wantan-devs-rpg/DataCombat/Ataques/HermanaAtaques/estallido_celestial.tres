@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AttackData" format=3 uid="uid://cfmy7uw7xx57w"]
+
+[ext_resource type="Script" uid="uid://de8na7r4mj1td" path="res://Escenas/Scripts/AttackData.gd" id="1_tx64l"]
+
+[resource]
+script = ExtResource("1_tx64l")
+id = "estallido_celestial"
+display_name = "Estallido Celestial"
+description = "Un golpe devastador cargado con toda su determinación."
+ap_cost = 22
+is_special = true
+base_power = 50
+can_be_used_coop = true
+coop_ap_multiplier = 1.6
+coop_damage_multiplier = 1.75
+metadata/_custom_type_script = "uid://de8na7r4mj1td"

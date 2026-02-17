@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AttackData" format=3 uid="uid://cegmgpfxjx4y6"]
+
+[ext_resource type="Script" uid="uid://de8na7r4mj1td" path="res://Escenas/Scripts/AttackData.gd" id="1_0c7qy"]
+
+[resource]
+script = ExtResource("1_0c7qy")
+id = "embestida"
+display_name = "Embestida"
+is_basic = true
+metadata/_custom_type_script = "uid://de8na7r4mj1td"

@@ -1,0 +1,182 @@
+[gd_scene format=3 uid="uid://bdk62h2bsrvui"]
+
+[ext_resource type="Script" uid="uid://kft5tjqnf4xo" path="res://UI/bag_selection_panel.gd" id="1_cy2sk"]
+[ext_resource type="FontFile" uid="uid://c0rgf5183t11c" path="res://Assets/Fonts/PressStart2P-Regular.ttf" id="2_hkc4y"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vsknd"]
+bg_color = Color(0.18598104, 0.18598089, 0.18598092, 0.85490197)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.92156863, 0.84313726, 0, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="BagSelectionPanel" type="Control" unique_id=1445754108]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cy2sk")
+
+[node name="Overlay" type="ColorRect" parent="." unique_id=1994092272]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="PanelRoot" type="Panel" parent="Overlay" unique_id=1477131275]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.33600003
+anchor_top = 0.287
+anchor_right = 0.559
+anchor_bottom = 0.694
+offset_left = -0.024017334
+offset_top = 0.00799942
+offset_right = -0.055999756
+offset_bottom = -17.904007
+theme_override_styles/panel = SubResource("StyleBoxFlat_vsknd")
+
+[node name="Content" type="Control" parent="Overlay/PanelRoot" unique_id=133043952]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ListView" type="Control" parent="Overlay/PanelRoot/Content" unique_id=1769827096]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+
+[node name="Scroll" type="ScrollContainer" parent="Overlay/PanelRoot/Content/ListView" unique_id=56524805]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = -5.600006
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="OptionsList" type="VBoxContainer" parent="Overlay/PanelRoot/Content/ListView/Scroll" unique_id=202878892]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 1
+
+[node name="ItemButtom" type="Button" parent="Overlay/PanelRoot/Content/ListView/Scroll/OptionsList" unique_id=923154626]
+visible = false
+custom_minimum_size = Vector2(0, 19)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Overlay/PanelRoot/Content/ListView/Scroll/OptionsList/ItemButtom" unique_id=1979883100]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 2
+
+[node name="LabelName" type="Label" parent="Overlay/PanelRoot/Content/ListView/Scroll/OptionsList/ItemButtom/HBoxContainer" unique_id=1776047845]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_hkc4y")
+theme_override_font_sizes/font_size = 5
+text = "ItemName"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="LabelCount" type="Label" parent="Overlay/PanelRoot/Content/ListView/Scroll/OptionsList/ItemButtom/HBoxContainer" unique_id=1898748485]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_colors/font_color = Color(0.92156863, 0.84313726, 0, 1)
+theme_override_fonts/font = ExtResource("2_hkc4y")
+theme_override_font_sizes/font_size = 5
+text = "x10"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="InfoView" type="Control" parent="Overlay/PanelRoot/Content" unique_id=1330105740]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="Overlay/PanelRoot/Content/InfoView" unique_id=1676760785]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.047000002
+anchor_top = -0.10700001
+anchor_right = 0.94600004
+anchor_bottom = 1.107
+offset_left = -12.023205
+offset_top = 4.4900007
+offset_right = 12.022392
+offset_bottom = -3.9899979
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="InfoContent" type="VBoxContainer" parent="Overlay/PanelRoot/Content/InfoView/MarginContainer" unique_id=1339592416]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="ItemName" type="Label" parent="Overlay/PanelRoot/Content/InfoView/MarginContainer/InfoContent" unique_id=831647579]
+texture_filter = 1
+custom_minimum_size = Vector2(8, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.92156863, 0.84313726, 0, 1)
+theme_override_fonts/font = ExtResource("2_hkc4y")
+theme_override_font_sizes/font_size = 6
+text = "ItemName"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ItemDescription" type="Label" parent="Overlay/PanelRoot/Content/InfoView/MarginContainer/InfoContent" unique_id=558251992]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_hkc4y")
+theme_override_font_sizes/font_size = 5
+text = "Descripción del objeto"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="BackButton" type="Button" parent="Overlay/PanelRoot/Content/InfoView/MarginContainer/InfoContent" unique_id=840300966]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_hkc4y")
+theme_override_font_sizes/font_size = 5
+text = "Volver"

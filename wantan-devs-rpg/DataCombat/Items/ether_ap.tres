@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dmvptgbplis0e"]
+
+[ext_resource type="Script" uid="uid://bip1510nlukxy" path="res://Escenas/Scripts/ItemData.gd" id="1_l2rds"]
+
+[resource]
+script = ExtResource("1_l2rds")
+id = "ether_ap"
+display_name = "Éter"
+description = "Recupera 2 AP a un aliado."
+target_flags = 3
+heal_ap_flat = 2
+metadata/_custom_type_script = "uid://bip1510nlukxy"

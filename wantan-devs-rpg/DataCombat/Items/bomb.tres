@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://5exfcre833j3"]
+
+[ext_resource type="Script" uid="uid://bip1510nlukxy" path="res://Escenas/Scripts/ItemData.gd" id="1_picdr"]
+
+[resource]
+script = ExtResource("1_picdr")
+id = "bomb"
+display_name = "Bomba"
+description = "Explosivo con daño 60 HP."
+target_flags = 4
+max_stack = 10
+damage_flat = 60
+metadata/_custom_type_script = "uid://bip1510nlukxy"

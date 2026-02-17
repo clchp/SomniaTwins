@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cgac57fgus45g"]
+
+[ext_resource type="Script" uid="uid://bip1510nlukxy" path="res://Escenas/Scripts/ItemData.gd" id="1_t5dlf"]
+
+[resource]
+script = ExtResource("1_t5dlf")
+id = "revive"
+display_name = "Revitalizante"
+description = "Revive a un aliado con 40% de HP."
+target_flags = 2
+max_stack = 10
+revive = true
+revive_hp_percent = 0.4
+metadata/_custom_type_script = "uid://bip1510nlukxy"

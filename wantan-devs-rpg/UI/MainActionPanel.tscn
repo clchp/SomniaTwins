@@ -1,0 +1,82 @@
+[gd_scene load_steps=12 format=3 uid="uid://dwthl6nppig7"]
+
+[ext_resource type="Script" uid="uid://dxgo6qxw501l8" path="res://UI/main_action_panel.gd" id="1_er0i4"]
+[ext_resource type="Texture2D" uid="uid://bx5vco6oi8ryk" path="res://Assets/Sprites/Batalla/Battle_ActionButtons.png" id="2_lcctk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lcctk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bfj56"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bfj56"]
+atlas = ExtResource("2_lcctk")
+region = Rect2(0, 0, 32, 42)
+margin = Rect2(2, 0, 2, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_slm5h"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_slm5h"]
+atlas = ExtResource("2_lcctk")
+region = Rect2(35.975, 0, 32, 42)
+margin = Rect2(2, 0, 2, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wolah"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wolah"]
+atlas = ExtResource("2_lcctk")
+region = Rect2(71.891, 0, 32, 42)
+margin = Rect2(2, 0, 2, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0myjs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0myjs"]
+atlas = ExtResource("2_lcctk")
+region = Rect2(107.832, 0, 33, 42)
+margin = Rect2(2, 0, 2, 0)
+
+[node name="MainActionPanel" type="Panel"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 239.00002
+offset_top = -44.999985
+offset_right = 28.0
+offset_bottom = 5.0000153
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.8, 0.8)
+theme_override_styles/panel = SubResource("StyleBoxEmpty_lcctk")
+script = ExtResource("1_er0i4")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 4.0
+offset_right = 168.0
+offset_bottom = 46.0
+theme_override_constants/separation = 1
+alignment = 1
+
+[node name="FUN" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(37, 42)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bfj56")
+icon = SubResource("AtlasTexture_bfj56")
+
+[node name="BAG" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(37, 42)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_slm5h")
+icon = SubResource("AtlasTexture_slm5h")
+
+[node name="SKILL" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(37, 42)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wolah")
+icon = SubResource("AtlasTexture_wolah")
+
+[node name="ATTACK" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(37, 42)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0myjs")
+icon = SubResource("AtlasTexture_0myjs")

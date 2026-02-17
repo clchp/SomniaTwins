@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="CombatantData" format=3 uid="uid://bpk6n7knef4p2"]
+
+[ext_resource type="Script" uid="uid://2f1xgv5wekg1" path="res://Escenas/Scripts/CombatantData.gd" id="1_842rq"]
+[ext_resource type="Script" uid="uid://de8na7r4mj1td" path="res://Escenas/Scripts/AttackData.gd" id="1_dstx1"]
+[ext_resource type="Resource" uid="uid://d33uq12fdwgux" path="res://DataCombat/Ataques/HermanoAtaques/embate_estrategico.tres" id="2_2aepv"]
+[ext_resource type="PackedScene" uid="uid://cbg5iqhp7cdmm" path="res://DataCombat/Personaje/hermano_batalla.tscn" id="3_5udfr"]
+[ext_resource type="Resource" uid="uid://68akxgplh0l3" path="res://DataCombat/Ataques/HermanoAtaques/impacto_disruptivo.tres" id="3_avujn"]
+
+[sub_resource type="Resource" id="Resource_2aepv"]
+script = ExtResource("1_dstx1")
+id = "ruptura_mental"
+display_name = "Ruptura Mental"
+description = "Un ataque preciso que impacta directamente en el punto débil del enemigo."
+ap_cost = 16
+is_special = true
+base_power = 35
+can_be_used_coop = true
+coop_ap_multiplier = 1.5
+coop_damage_multiplier = 1.6
+metadata/_custom_type_script = "uid://de8na7r4mj1td"
+
+[sub_resource type="Resource" id="Resource_avujn"]
+script = ExtResource("1_dstx1")
+id = "embestida"
+display_name = "Embestida"
+is_basic = true
+metadata/_custom_type_script = "uid://de8na7r4mj1td"
+
+[resource]
+script = ExtResource("1_842rq")
+id = "hermano"
+display_name = "Hermano"
+is_player = true
+max_hp = 110
+attack = 16
+defense = 8
+speed = 9
+max_ap = 40
+ap_regen_per_turn = 3
+attacks = Array[ExtResource("1_dstx1")]([SubResource("Resource_2aepv"), ExtResource("2_2aepv"), ExtResource("3_avujn"), SubResource("Resource_avujn")])
+can_coop_attacks = true
+coop_partner_id = "hermana"
+battle_scene = ExtResource("3_5udfr")
+metadata/_custom_type_script = "uid://2f1xgv5wekg1"

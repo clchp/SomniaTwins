@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://vmdyk840c01l"]
+
+[ext_resource type="FontFile" uid="uid://c0rgf5183t11c" path="res://Assets/Fonts/PressStart2P-Regular.ttf" id="1_ut4se"]
+[ext_resource type="Script" uid="uid://ma1disxgpf15" path="res://Escenas/Mini-juegos/circle_qte.gd" id="1_v8djj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v8djj"]
+bg_color = Color(0.25929368, 0.25929374, 0.2592936, 1)
+corner_radius_top_left = 999
+corner_radius_top_right = 999
+corner_radius_bottom_right = 999
+corner_radius_bottom_left = 999
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e7mhu"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 999
+corner_radius_top_right = 999
+corner_radius_bottom_right = 999
+corner_radius_bottom_left = 999
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4qxjo"]
+bg_color = Color(0.3372549, 0.8, 0.08627451, 1)
+corner_radius_top_left = 999
+corner_radius_top_right = 999
+corner_radius_bottom_right = 999
+corner_radius_bottom_left = 999
+
+[node name="CircleQte" type="Control" unique_id=736374914]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_v8djj")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=899903904]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CircleContainer" type="Control" parent="CenterContainer" unique_id=148585432]
+custom_minimum_size = Vector2(216, 216)
+layout_mode = 2
+
+[node name="BaseCircle" type="Panel" parent="CenterContainer/CircleContainer" unique_id=242759119]
+custom_minimum_size = Vector2(216, 216)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v8djj")
+
+[node name="MovingRing" type="Panel" parent="CenterContainer/CircleContainer" unique_id=877434574]
+custom_minimum_size = Vector2(216, 216)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(108, 108)
+theme_override_styles/panel = SubResource("StyleBoxFlat_e7mhu")
+
+[node name="PerfectZone" type="Panel" parent="CenterContainer/CircleContainer" unique_id=1134224108]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = -30.0
+offset_right = 30.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4qxjo")
+
+[node name="PressText" type="Label" parent="CenterContainer/CircleContainer" unique_id=432083423]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 25.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_ut4se")
+text = "C"
+horizontal_alignment = 1
+vertical_alignment = 1

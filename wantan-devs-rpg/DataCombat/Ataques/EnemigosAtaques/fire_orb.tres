@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="AttackData" format=3 uid="uid://c0jvacwtppmex"]
+
+[ext_resource type="Script" uid="uid://de8na7r4mj1td" path="res://Escenas/Scripts/AttackData.gd" id="1_ccqmh"]
+
+[resource]
+script = ExtResource("1_ccqmh")
+id = "fire_orb"
+display_name = "Bola de fuego"
+description = "Una esfera ardiente que quema al objetivo."
+is_special = true
+base_power = 18
+damage_type = "elemental"
+element = "fire"
+metadata/_custom_type_script = "uid://de8na7r4mj1td"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bkx5oh1fjubt8"]
+
+[ext_resource type="Script" uid="uid://bip1510nlukxy" path="res://Escenas/Scripts/ItemData.gd" id="1_0fgdl"]
+
+[resource]
+script = ExtResource("1_0fgdl")
+id = "potion_hp"
+display_name = "Poción"
+description = "Recupera 30 HP a un aliado."
+heal_hp_flat = 30
+metadata/_custom_type_script = "uid://bip1510nlukxy"

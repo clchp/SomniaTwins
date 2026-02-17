@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DropData" format=3 uid="uid://dy66qi6bdcueu"]
+
+[ext_resource type="Resource" uid="uid://bkx5oh1fjubt8" path="res://DataCombat/Items/potion_hp.tres" id="1_uam5d"]
+[ext_resource type="Script" uid="uid://bik8sftxkits5" path="res://Escenas/Scripts/DropData.gd" id="2_x863s"]
+
+[resource]
+script = ExtResource("2_x863s")
+item = ExtResource("1_uam5d")
+weight = 3.0
+metadata/_custom_type_script = "uid://bik8sftxkits5"

@@ -1,0 +1,16 @@
+[style name="WantanLayer"]
+npc_semilla (Interrogative): y tu quien eres?
+label inicio
+- Dónde estoy?
+	npc_semilla (Interrogative): A unos metros de la aldea Seedillage
+	jump inicio
+- Eres una semilla?
+	npc_semilla (Love): Zi, a poco soy tierna?
+	jump inicio
+- Me llamo "hermana XD"
+	npc_semilla (Alert): EH???!!!
+	[wait time="1.5"]
+	npc_semilla (Interrogative): Y que es una "hermana"?
+[wait time="0.5" hide_text="false"]
+npc_semilla (Love): En fin, pareces inofensiva\
+Ten buen día

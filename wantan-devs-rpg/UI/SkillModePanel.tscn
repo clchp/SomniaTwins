@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://c653gccmmil6j"]
+
+[ext_resource type="FontFile" uid="uid://c0rgf5183t11c" path="res://Assets/Fonts/PressStart2P-Regular.ttf" id="1_67yg7"]
+[ext_resource type="Script" uid="uid://bcqlcv0nbvn8o" path="res://UI/skill_mode_panel.gd" id="1_mwkos"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mwkos"]
+bg_color = Color(0.18598104, 0.18598089, 0.18598092, 0.85490197)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.11764706, 0.6862745, 0.6862745, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="SkillModePanel" type="Control" unique_id=1327269138]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mwkos")
+
+[node name="Overlay" type="ColorRect" parent="." unique_id=2013064387]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="PanelRoot" type="Panel" parent="Overlay" unique_id=1783916470]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.33600003
+anchor_top = 0.287
+anchor_right = 0.559
+anchor_bottom = 0.694
+offset_left = -0.024017334
+offset_top = 0.00799942
+offset_right = -0.055999756
+offset_bottom = -17.904007
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mwkos")
+
+[node name="Content" type="Control" parent="Overlay/PanelRoot" unique_id=880642905]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InfoView" type="Control" parent="Overlay/PanelRoot/Content" unique_id=96115857]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="Overlay/PanelRoot/Content/InfoView" unique_id=1414838797]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.047000002
+anchor_top = -0.10700001
+anchor_right = 0.94600004
+anchor_bottom = 1.107
+offset_left = -12.023205
+offset_top = 4.4900007
+offset_right = 12.022392
+offset_bottom = -3.9899979
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="InfoContent" type="VBoxContainer" parent="Overlay/PanelRoot/Content/InfoView/MarginContainer" unique_id=1866041901]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="AttackName" type="Label" parent="Overlay/PanelRoot/Content/InfoView/MarginContainer/InfoContent" unique_id=165748054]
+texture_filter = 1
+custom_minimum_size = Vector2(8, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.11764706, 0.6862745, 0.6862745, 1)
+theme_override_fonts/font = ExtResource("1_67yg7")
+theme_override_font_sizes/font_size = 5
+text = "AttackName"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="AttackQuestion" type="Label" parent="Overlay/PanelRoot/Content/InfoView/MarginContainer/InfoContent" unique_id=1536692597]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_67yg7")
+theme_override_font_sizes/font_size = 4
+text = "¿Modo de uso?"
+horizontal_alignment = 1
+vertical_alignment = 1
+max_lines_visible = 2
+
+[node name="Options" type="VBoxContainer" parent="Overlay/PanelRoot/Content/InfoView/MarginContainer/InfoContent" unique_id=589095141]
+layout_mode = 2
+theme_override_constants/separation = 1
+
+[node name="SoloButton" type="Button" parent="Overlay/PanelRoot/Content/InfoView/MarginContainer/InfoContent/Options" unique_id=1318286542]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_67yg7")
+theme_override_font_sizes/font_size = 3
+text = "Usar solo (10 AP)"
+
+[node name="CopButton" type="Button" parent="Overlay/PanelRoot/Content/InfoView/MarginContainer/InfoContent/Options" unique_id=341968638]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_67yg7")
+theme_override_font_sizes/font_size = 3
+text = "Usar en equipo 
+(15 AP c/u)"
+autowrap_mode = 3
+
+[node name="BackButton" type="Button" parent="Overlay/PanelRoot/Content/InfoView/MarginContainer/InfoContent" unique_id=204634185]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_67yg7")
+theme_override_font_sizes/font_size = 5
+text = "Volver"

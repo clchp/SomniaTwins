@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvl6mm7t3vai"]
+
+[ext_resource type="Script" uid="uid://bn23ok3jtyd3w" path="res://UI/floating_text.gd" id="1_ydsml"]
+[ext_resource type="FontFile" uid="uid://c0rgf5183t11c" path="res://Assets/Fonts/PressStart2P-Regular.ttf" id="2_iqsrb"]
+
+[node name="FloatingText" type="Node2D"]
+script = ExtResource("1_ydsml")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("2_iqsrb")
+theme_override_font_sizes/font_size = 7

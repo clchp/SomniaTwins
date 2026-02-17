@@ -1,0 +1,182 @@
+[gd_scene format=3 uid="uid://dpmetvuox8tw"]
+
+[ext_resource type="FontFile" uid="uid://c0rgf5183t11c" path="res://Assets/Fonts/PressStart2P-Regular.ttf" id="1_6vmu7"]
+[ext_resource type="Script" uid="uid://h4ugtssuda8e" path="res://UI/skill_selection_panel.gd" id="1_h6stt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h6stt"]
+bg_color = Color(0.18598104, 0.18598089, 0.18598092, 0.85490197)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.11764706, 0.6862745, 0.6862745, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="SkillSelectionPanel" type="Control" unique_id=1058266203]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h6stt")
+
+[node name="Overlay" type="ColorRect" parent="." unique_id=1600981924]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="PanelRoot" type="Panel" parent="Overlay" unique_id=897033109]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.33600003
+anchor_top = 0.287
+anchor_right = 0.559
+anchor_bottom = 0.694
+offset_left = -0.024017334
+offset_top = 0.00799942
+offset_right = -0.055999756
+offset_bottom = -17.904007
+theme_override_styles/panel = SubResource("StyleBoxFlat_h6stt")
+
+[node name="Content" type="Control" parent="Overlay/PanelRoot" unique_id=1174998663]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ListView" type="Control" parent="Overlay/PanelRoot/Content" unique_id=614971215]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+
+[node name="Scroll" type="ScrollContainer" parent="Overlay/PanelRoot/Content/ListView" unique_id=322842797]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = -5.600006
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="OptionsList" type="VBoxContainer" parent="Overlay/PanelRoot/Content/ListView/Scroll" unique_id=1100547498]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 1
+
+[node name="ItemButtom" type="Button" parent="Overlay/PanelRoot/Content/ListView/Scroll/OptionsList" unique_id=2004131767]
+visible = false
+custom_minimum_size = Vector2(0, 19)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Overlay/PanelRoot/Content/ListView/Scroll/OptionsList/ItemButtom" unique_id=1545943810]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 2
+
+[node name="LabelName" type="Label" parent="Overlay/PanelRoot/Content/ListView/Scroll/OptionsList/ItemButtom/HBoxContainer" unique_id=907718139]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_6vmu7")
+theme_override_font_sizes/font_size = 4
+text = "AttackName"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="LabelCost" type="Label" parent="Overlay/PanelRoot/Content/ListView/Scroll/OptionsList/ItemButtom/HBoxContainer" unique_id=491984876]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_colors/font_color = Color(0.11764706, 0.6862745, 0.6862745, 1)
+theme_override_fonts/font = ExtResource("1_6vmu7")
+theme_override_font_sizes/font_size = 4
+text = "10 AP"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="InfoView" type="Control" parent="Overlay/PanelRoot/Content" unique_id=226319059]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="Overlay/PanelRoot/Content/InfoView" unique_id=2016767639]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.047000002
+anchor_top = -0.10700001
+anchor_right = 0.94600004
+anchor_bottom = 1.107
+offset_left = -12.023205
+offset_top = 4.4900007
+offset_right = 12.022392
+offset_bottom = -3.9899979
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="InfoContent" type="VBoxContainer" parent="Overlay/PanelRoot/Content/InfoView/MarginContainer" unique_id=1158849577]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="AttackName" type="Label" parent="Overlay/PanelRoot/Content/InfoView/MarginContainer/InfoContent" unique_id=1412054178]
+texture_filter = 1
+custom_minimum_size = Vector2(8, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.11764706, 0.6862745, 0.6862745, 1)
+theme_override_fonts/font = ExtResource("1_6vmu7")
+theme_override_font_sizes/font_size = 5
+text = "AttackName"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="AttackDescription" type="Label" parent="Overlay/PanelRoot/Content/InfoView/MarginContainer/InfoContent" unique_id=1101389773]
+texture_filter = 1
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_6vmu7")
+theme_override_font_sizes/font_size = 4
+text = "Descripción del ataque"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="BackButton" type="Button" parent="Overlay/PanelRoot/Content/InfoView/MarginContainer/InfoContent" unique_id=2002484458]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_6vmu7")
+theme_override_font_sizes/font_size = 5
+text = "Volver"

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c710ukf1wpp7q"]
+
+[ext_resource type="Script" uid="uid://cap0tsv5axqht" path="res://UI/turn_indicator.gd" id="1_w7kas"]
+
+[node name="TurnIndicator" type="Node2D" unique_id=1652105354]
+script = ExtResource("1_w7kas")

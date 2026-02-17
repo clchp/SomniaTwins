@@ -1,0 +1,10 @@
+[style name="WantanLayer"]
+npc_prueba: hola\
+q tal
+- Maincraaaaaaaa
+	npc_prueba: maincra
+- Q haces?
+	npc_prueba: probando
+- boo
+	npc_prueba: waaa
+[end_timeline]

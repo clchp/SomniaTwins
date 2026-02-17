@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="AttackData" format=3 uid="uid://dx2lgb2mfpnm7"]
+
+[ext_resource type="Script" uid="uid://de8na7r4mj1td" path="res://Escenas/Scripts/AttackData.gd" id="1_c8p8c"]
+
+[resource]
+script = ExtResource("1_c8p8c")
+id = "corte_luminoso"
+display_name = "Corte Luminoso"
+description = "Un corte veloz imbuido de energía brillante."
+ap_cost = 10
+is_special = true
+base_power = 26
+can_be_used_coop = true
+coop_damage_multiplier = 1.5
+metadata/_custom_type_script = "uid://de8na7r4mj1td"

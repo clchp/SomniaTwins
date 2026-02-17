@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DropData" format=3 uid="uid://c4vna1jn3lb03"]
+
+[ext_resource type="Resource" uid="uid://dy7m6pdeyvosb" path="res://DataCombat/Items/antidote.tres" id="1_n3ogp"]
+[ext_resource type="Script" uid="uid://bik8sftxkits5" path="res://Escenas/Scripts/DropData.gd" id="1_qbmi0"]
+
+[resource]
+script = ExtResource("1_qbmi0")
+item = ExtResource("1_n3ogp")
+weight = 7.0
+metadata/_custom_type_script = "uid://bik8sftxkits5"

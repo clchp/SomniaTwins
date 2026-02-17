@@ -1,0 +1,82 @@
+[gd_resource type="Resource" script_class="CombatantData" format=3 uid="uid://igyxtsqmdn35"]
+
+[ext_resource type="Script" uid="uid://2f1xgv5wekg1" path="res://Escenas/Scripts/CombatantData.gd" id="1_bcuyo"]
+[ext_resource type="Script" uid="uid://de8na7r4mj1td" path="res://Escenas/Scripts/AttackData.gd" id="1_nlsqf"]
+[ext_resource type="PackedScene" uid="uid://cp07levo5f1aq" path="res://DataCombat/Personaje/enemigo1_ejemplo.tscn" id="3_nlsqf"]
+[ext_resource type="Script" uid="uid://bik8sftxkits5" path="res://Escenas/Scripts/DropData.gd" id="3_scmwl"]
+[ext_resource type="Resource" uid="uid://dy7m6pdeyvosb" path="res://DataCombat/Items/antidote.tres" id="4_kasku"]
+[ext_resource type="Resource" uid="uid://dy66qi6bdcueu" path="res://DataCombat/Drop/EnemigoGenerico/mushroom_potion_hp_drop.tres" id="5_kasku"]
+
+[sub_resource type="Resource" id="Resource_708k4"]
+script = ExtResource("1_nlsqf")
+id = "golpe_enemigo"
+display_name = "Golpe"
+description = "Un ataque simple del enemigo"
+is_basic = true
+base_power = 8
+metadata/_custom_type_script = "uid://de8na7r4mj1td"
+
+[sub_resource type="Resource" id="Resource_flb7m"]
+script = ExtResource("1_nlsqf")
+id = "fire_orb"
+display_name = "Bola de fuego"
+description = "Una esfera ardiente que quema al objetivo."
+is_special = true
+base_power = 18
+damage_type = "elemental"
+element = "fire"
+metadata/_custom_type_script = "uid://de8na7r4mj1td"
+
+[sub_resource type="Resource" id="Resource_scmwl"]
+script = ExtResource("1_nlsqf")
+id = "brutal_strike"
+display_name = "Golpe Brutal"
+description = "Un golpe pesado que aplasta al enemigo con fuerza desmedida."
+is_special = true
+base_power = 22
+metadata/_custom_type_script = "uid://de8na7r4mj1td"
+
+[sub_resource type="Resource" id="Resource_kasku"]
+script = ExtResource("1_nlsqf")
+id = "electric_storm"
+display_name = "Tormenta Eléctrica"
+description = "Rayos que golpean a todos los enemigos."
+is_special = true
+target_type = "all_enemies"
+base_power = 14
+damage_type = "elemental"
+element = "electric"
+metadata/_custom_type_script = "uid://de8na7r4mj1td"
+
+[sub_resource type="Resource" id="Resource_to3dk"]
+script = ExtResource("1_nlsqf")
+id = "venom_bite"
+display_name = "Mordida Venenosa"
+description = "Una mordida que puede envenenar al objetivo."
+is_special = true
+base_power = 12
+status_effects = Array[String](["poison"])
+metadata/_custom_type_script = "uid://de8na7r4mj1td"
+
+[sub_resource type="Resource" id="Resource_vdwg0"]
+script = ExtResource("3_scmwl")
+item = ExtResource("4_kasku")
+weight = 7.0
+metadata/_custom_type_script = "uid://bik8sftxkits5"
+
+[resource]
+script = ExtResource("1_bcuyo")
+id = "enemigo_generico"
+display_name = "Enemigo"
+max_hp = 80
+attack = 12
+defense = 4
+speed = 8
+ap_regen_per_turn = 0
+attacks = Array[ExtResource("1_nlsqf")]([SubResource("Resource_708k4"), SubResource("Resource_flb7m"), SubResource("Resource_scmwl"), SubResource("Resource_kasku"), SubResource("Resource_to3dk")])
+battle_scene = ExtResource("3_nlsqf")
+xp_reward = 25
+gold_reward = 10
+drop_chance = 0.6
+possible_drops = Array[ExtResource("3_scmwl")]([SubResource("Resource_vdwg0"), ExtResource("5_kasku")])
+metadata/_custom_type_script = "uid://2f1xgv5wekg1"
